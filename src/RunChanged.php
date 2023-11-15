@@ -34,6 +34,13 @@ use function unlink;
  */
 class RunChanged extends Module
 {
+    protected array $config = [
+        'username',
+        'password',
+        'imap_path' => '{imap.gmail.com:993/imap/ssl}INBOX',
+        'charset' => 'UTF-8',
+    ];
+
     protected string $group = 'changed';
     private const BRANCH_NAME_PARAM = 'branch_name';
 
