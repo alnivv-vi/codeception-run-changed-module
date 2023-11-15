@@ -35,6 +35,7 @@ use function unlink;
  */
 class RunChanged extends Module
 {
+    protected array $requiredFields = ['browser', 'url'];
     protected array $config = [
         'username',
         'password'
