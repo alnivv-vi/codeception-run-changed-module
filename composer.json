@@ -1,0 +1,25 @@
+{
+    "name": "alnivv-vi/codeception-run-changed",
+    "keywords":["codeception", "testing", "php", "diff", "gitlab", "run"],
+    "description": "run tests suite with Codeception only for files with changes",
+    "homepage": "https://github.com/alnivv-vi/codeception-run-changed",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Vdovin",
+            "email": "alnivv@gmail.com",
+	        "role": "QA Automation engineer"
+        }
+    ],
+    "require": {
+	    "php": "^8",
+        "ext-json": "*",
+        "codeception/codeception": "^5.0.3",
+        "nikic/php-parser": "^4.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codeception\\": "src/"
+        }
+    }
+}
