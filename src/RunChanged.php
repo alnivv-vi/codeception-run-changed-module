@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codeception;
+namespace Codeception\Module;
 
 use Codeception\Configuration as Config;
 use Codeception\Event\PrintResultEvent;
+use Codeception\Module;
 use Codeception\Test\Descriptor;
 use function array_key_exists;
 use function file_put_contents;
