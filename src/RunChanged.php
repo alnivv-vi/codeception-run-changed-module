@@ -56,6 +56,7 @@ class RunChanged extends Module
         $logPath = str_replace(Config::projectDir(), '', Config::projectDir()); // get local path to logs
         $this->_reconfigure(['groups' => [$this->group => $logPath . $this->group]]);
         $this->getChangedTests();
+        echo "debug";
     }
 
     private function getChangedTests()
